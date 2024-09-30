@@ -9,15 +9,15 @@ let isPlatinum;
 
 let hasPromotion;
 //John Profile
-lastMonthPaidMoreThan4000 = true;
+lastMonthPaidMoreThan4000 = 4001;
 isWeekday = true;
 hasBoughtProductFromITCategory = false;
 hasAttendedDiscountEvent = true;
-isPlatinum = false;
+isPlatinum = "Gold";
 hasPromotion =
-  (lastMonthPaidMoreThan4000 &&
+  (lastMonthPaidMoreThan4000 > 4000 &&
     isWeekday &&
     !hasBoughtProductFromITCategory &&
     !hasAttendedDiscountEvent) ||
-  isPlatinum;
+  isPlatinum == "Platinum";
 console.log(hasPromotion);
