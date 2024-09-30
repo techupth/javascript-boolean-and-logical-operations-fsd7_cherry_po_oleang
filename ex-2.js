@@ -6,7 +6,14 @@ let isWeekday;
 let hasBoughtProductFromITCategory;
 let hasAttendedDiscountEvent;
 let isPlatinum;
-
 let hasPromotion;
 
+//Reassign
+lastMonthPaidMoreThan4000 = 4001 ;
+isWeekday = true;
+hasBoughtProductFromITCategory = false;
+hasAttendedDiscountEvent = true;
+isPlatinum = false;
+
+hasPromotion = (lastMonthPaidMoreThan4000 >= 4000)&&(isWeekday == true)&&(hasBoughtProductFromITCategory == false)&&(hasAttendedDiscountEvent == false)||isPlatinum == true;
 console.log(hasPromotion);
